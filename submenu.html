@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Multi-Level Dropdowns</h2>
+  <p>In this example, we have created a .dropdown-submenu class for multi-level dropdowns (see style section above).</p>
+  <p>Note that we have added jQuery to open the multi-level dropdown on click (see script section below).</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">HTML</a></li>
+      <li><a tabindex="-1" href="#">CSS</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+*************
+<h3>Basic Nav</h3>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Social</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contac Us</a>
+    </li>
+  </ul>
+<!--
+<h3>Nav Tabs</h3>
+  <nav class="nav nav-tabs">
+    <a class="nav-link" href="#">Abraca</a>
+    <a class="nav-link" href="#">kadabra</a>
+
+  </nav>
+  <h3>Nav Pills</h3>
+  <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Social</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contac Us</a>
+      </li>
+    </ul>
+    <h3>Nav Pills-Fill and Justify using UL tag</h3>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Social</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contac Us</a>
+        </li>
+      </ul>
+      <h5>Nav Pills using 'nav'tag </h5>
+      <nav class="nav nav-pills">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Living Room</a>
+        <a class="nav-item nav-link active" href="#">Dining Room</a>
+      </nav> -->
+<!--
+      <h5>Nav Pills using 'nav'tag-fill </h5>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link " href="#">Living Room</a>
+        <a class="nav-item nav-link active" href="#">Dining Room</a>
+      </nav> -->
+
+      <!-- <h5>Nav Pills using 'nav'tag-justified </h5>
+      <nav class="nav nav-pills nav-justified">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Living Room</a>
+        <a class="nav-item nav-link disabled" href="#">Dining Room</a>
+      </nav> -->
+
+      <!-- <h6>Nav Tabs with dropdown using nav tag</h6>
+      <nav class="nav nav-tabs">
+        <a class="nav-item nav-link active" href="#">Tab1</a>
+        <a class="nav-item nav-link" href="#">Tab2</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another Action</a>
+        </div>
+        <a class="nav-item nav-link" href="#">Tab3</a>
+      </nav> -->
+
+      <!-- <h6>Nav Tabs using 'ul' tag</h6>
+        <ul class="nav nav-tabs">
+          <li class="nav-item" >
+            <a class="nav-link active" href="#">Tabs_with_Lists1</a>
+          </li>
+          <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tabs_with_Lists2</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Separated link</a>
+
+          </li>
+            <li class="nav-item" >
+            <a class="nav-link" href="#">Tabs_with_Lists3</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#">Tabs_with_Lists4</a>
+          </li>
+        </ul> -->
+***********        
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+</body>
+</html>
